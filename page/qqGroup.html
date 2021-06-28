@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>QQ群</title>
+  <link rel="stylesheet" href="../layui/css/layui.css">
+</head>
+<body >
+
+  
+      <form name="ff"   action="">
+        <div style="text-align:center;Margin:10px">
+      <button type="button" class="layui-btn layui-btn-fluid" lay-submit lay-filter="form1">轻舟一群</button>
+</div>
+<!-- <div style="text-align:center;Margin:10px">
+      <button type="button" class="layui-btn layui-btn-fluid" lay-submit lay-filter="form2">轻舟二群</button>
+    </div>       -->
+    </form>
+
+
+            
+          
+  
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="../layui/layui.all.js"></script>
+<script>
+
+
+ 
+
+    //Demo
+    layui.use('form', function(){
+      var form = layui.form;
+      
+      //监听提交
+      form.on('submit(form1)', function(){
+        // layer.msg("加入群一");
+        sendToAndroid1();
+        return false;
+      });
+
+//监听提交
+form.on('submit(form2)', function(){
+        // layer.msg("加入群二");
+        sendToAndroid2();
+        return false;
+      });
+
+
+    });
+
+
+                function sendToAndroid1() {
+      // body...
+      //console.log("call android")
+      if(window.android!=null&&typeof(window.android)!="undefined"){
+        window.android.callAndroid("TtFCZ32h_iq5yYGV2HPGX8pvOaTlW2wg");
+      }else{
+         //alert(typeof(window.android));
+      }
+     
+  }
+
+  function sendToAndroid2() {
+      // body...
+      //console.log("call android")
+      if(window.android!=null&&typeof(window.android)!="undefined"){
+        window.android.callAndroid("awKatEwk6hiK92QnLmDtXOuvUsvQCiSi");
+      }else{
+         //alert(typeof(window.android));
+      }
+     
+  }
+  </script>
+  
+</body>
+</html>
+    </body>
+    </html>
